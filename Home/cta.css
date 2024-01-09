@@ -1,0 +1,41 @@
+/* Styling for heading in section 3 */
+#sec3 h2.head1 {
+  color: #000;
+  font-size: 26px;
+  font-family: "Yantramanav", sans-serif !important;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+/* Styling for paragraph in section 3 */
+#sec3 p.para1 {
+  color: gray;
+  font-family: "Yantramanav", sans-serif !important;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+/* Styling for the container in section 3 */
+div#sec3 {
+  margin: 0px 0px;
+}
+
+/* Styling for the Call-to-Action container */
+.CTAcontainer {
+  background: #eee;
+  padding: 0px 0px;
+}
+
+/* Responsive styling for screens up to 480px width */
+@media only screen and (max-width: 480px) {
+  .CTAcontainer {
+    padding: 30px 10px;
+    margin-bottom: 60px;
+  }
+
+  /* Additional styling for heading in section 3 on smaller screens */
+  .ctaheading {
+    margin-top: 30px;
+    font-size: 22px !important;
+  }
+}

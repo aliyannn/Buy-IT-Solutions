@@ -1,0 +1,126 @@
+/* Base styling for the webpage */
+body {
+  font-family: Arial, sans-serif;
+}
+
+/* Styling for the grid container holding the cards */
+.Cardcontainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 10px;
+  justify-content: center;
+  max-width: 1200px; /* Set a maximum width to prevent excessive stretching on larger screens */
+  margin: 0 auto; /* Center the grid within the available space */
+}
+
+/* Styling for each individual card */
+.card {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+/* Styling for the card image inside each card */
+.card-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+/* Styling for the content that appears on hover inside each card */
+.card > .card-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  background-color: #003da69f;
+}
+
+/* Styling for the title inside the card content */
+.card > .card-content > h2 {
+  font-size: 20px;
+}
+
+/* Hover effect on the card image */
+.card:hover .card-image {
+  transform: scale(1.1);
+}
+
+/* Hover effect on the card content */
+.card:hover .card-content {
+  opacity: 1;
+}
+
+/* Styling for the heading in the "twelve" class */
+.twelve h2 {
+  font-size: 26px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  width: 100%;
+  white-space: nowrap;
+  padding-bottom: 13px;
+  margin-top: 30px;
+  position: relative;
+}
+
+/* Styling for the decorative line below the heading in the "twelve" class */
+.twelve > h2:before {
+  background-color: #003da6;
+  content: "";
+  display: block;
+  height: 3px;
+  width: 75px;
+  margin-bottom: 5px;
+  bottom: 0;
+  position: absolute;
+}
+
+/* Styling for the general text content in the webpage */
+.TitleText {
+  font-weight: 400;
+  padding-bottom: 20px;
+}
+
+/* Media query for screens up to 1200px width */
+@media only screen and (max-width: 1200px) {
+  .Cardcontainer {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Media query for screens up to 900px width */
+@media only screen and (max-width: 900px) {
+  .Cardcontainer {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* Additional styling for the heading in the "twelve" class */
+  .twelve h2 {
+    right: 0;
+  }
+}
+
+/* Media query for screens up to 600px width */
+@media only screen and (max-width: 600px) {
+  /* Adjusted styling for the heading in the "twelve" class */
+  .twelve h2 {
+    font-size: 20px;
+    right: 0;
+  }
+
+  /* Adjusted styling for the general text content */
+  .TitleText {
+    font-size: 16px;
+    text-align: justify;
+  }
+}

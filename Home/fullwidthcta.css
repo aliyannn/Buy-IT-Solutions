@@ -1,0 +1,89 @@
+/* Resetting default margin and setting font for the body */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* Styling for the full-width section */
+.full-width-section {
+  width: 100%;
+  background-color: #003da6;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #fff;
+}
+
+/* Styling for the first row with two columns */
+.CTArow {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+/* Styling for the left column in the first row */
+.CTAcolumn {
+  padding: 20px;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+/* Styling for the right column in the first row */
+.CTAcolumn2 {
+  flex: 1;
+  padding: 20px;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+/* Styling for heading in the first column */
+.CTAcolumn > h2 {
+  font-size: 20px;
+}
+
+/* Styling for the call-to-action button */
+.btn {
+  background-color: #fff200;
+  color: black;
+  font-size: 15px;
+  font-weight: 600;
+  border-radius: 6px;
+}
+
+/* Styling for the second row with two columns */
+.CTAcolumn2 > ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+/* Styling for list items in the second row */
+.CTAcolumn2 > ul > li {
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+/* Styling for the images in list items */
+.CTAcolumn2 > ul > li > img {
+  width: 3%;
+  margin-right: 6px;
+}
+
+/* Making the image responsive in the second column */
+.CTAcolumn2 > img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Responsive styling for screens up to 768px width */
+@media only screen and (max-width: 768px) {
+  .CTArow {
+    flex-direction: column;
+  }
+
+  .CTAcolumn,
+  .CTAcolumn2 {
+    width: 100%;
+  }
+}
