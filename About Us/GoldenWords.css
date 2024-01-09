@@ -1,0 +1,79 @@
+/* Styling for a fluid container with zero padding on the sides */
+.container-fluid {
+  padding-right: 0px;
+  padding-left: 0px;
+}
+
+/* Styling for a jumbotron with a linear gradient background */
+.jumbotron {
+  text-align: center;
+  background-image: linear-gradient(
+    to right,
+    rgba(255, 0, 0, 0),
+    rgb(0, 80, 166)
+  );
+}
+
+/* Styling for a heading with specific attributes */
+.twelve {
+  font-size: 26px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  width: 100%;
+  white-space: nowrap;
+  padding-bottom: 0;
+  margin-top: 15px;
+  position: relative;
+}
+
+/* Styling for lead text with padding */
+.lead {
+  padding: 0px 300px;
+}
+
+/* Media query for screens with a maximum width of 1500px */
+@media only screen and (max-width: 1500px) {
+  .lead {
+    padding: 0px;
+  }
+}
+
+/* Media query for screens with widths between 481px and 1024px */
+@media only screen and (min-width: 481px) and (max-width: 1024px) {
+  .twelve {
+    font-size: 38px;
+  }
+
+  .jumbotron {
+    padding-left: 3%;
+    padding-right: 3%;
+  }
+}
+
+/* Media query for screens with a maximum width of 480px */
+@media only screen and (max-width: 480px) {
+  .twelve {
+    font-size: 22px;
+  }
+
+  .jumbotron {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+
+  /* Styling for lead text with text alignment and font size adjustment */
+  .lead {
+    text-align: justify;
+    font-size: 16px;
+  }
+}
+
+/* Styling for a button with specific background and text color, font size, and border radius */
+.btn {
+  background-color: #003da6;
+  color: white;
+  font-size: 15px;
+  font-weight: 600;
+  border-radius: 0px;
+}

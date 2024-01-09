@@ -1,0 +1,103 @@
+/* Styling for the "About Us" label */
+.aboutus {
+  color: white;
+  background-color: #003da6;
+  display: inline-block;
+  padding: 4px 12px;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+/* Styling for images with a specific class */
+.imageSize {
+  height: 304px;
+  width: auto;
+}
+
+/* Styling for the heading in the "Welcome" section */
+.twelve h1 {
+  font-size: 26px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  width: 100%;
+  white-space: nowrap;
+  padding-bottom: 13px;
+  margin-top: 15px;
+  position: relative;
+  text-align: start;
+}
+
+/* Styling for the underline effect on the heading */
+.twelve > h1:before {
+  background-color: #003da6;
+  content: "";
+  display: block;
+  height: 3px;
+  width: 75px;
+  margin-bottom: 5px;
+  bottom: 0;
+  position: absolute;
+}
+
+/* Styling for the blockquote in the "About Us" section */
+.Aboutblockquote {
+  font-size: 22px;
+  text-align: justify;
+  border-left: 3px solid #003da6;
+  border-right: 3px solid #003da6;
+  border-radius: 10px;
+  background-color: #f7f7f7;
+  padding: 30px 0;
+}
+
+/* Media query for screens with a maximum width of 600px */
+@media only screen and (max-width: 600px) {
+  .Welcome {
+    margin-top: 100px;
+    padding-left: 8%;
+    padding-right: 8%;
+  }
+
+  .imageSize {
+    width: auto;
+    max-width: inherit;
+    height: auto;
+    padding: 0px 5%;
+  }
+
+  .Aboutblockquote {
+    font-size: 16px;
+    margin: 0px 5%;
+  }
+
+  .aboutus {
+    font-size: 13px;
+  }
+
+  .twelve {
+    font-size: 22px;
+  }
+}
+
+/* Media query for screens with a width between 601px and 900px */
+@media only screen and (min-width: 601px) and (max-width: 900px) {
+  .Welcome {
+    margin-top: 100px;
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+
+  .imageSize {
+    width: auto;
+    max-width: fit-content;
+    height: auto;
+    padding: 0px 20px;
+  }
+
+  .Aboutblockquote {
+    font-size: 18px;
+    margin-left: 3%;
+    margin-right: 3%;
+  }
+}

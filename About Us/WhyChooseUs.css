@@ -1,0 +1,92 @@
+.mainDiv {
+  margin-bottom: -8px;
+}
+
+.choose-us {
+  background: #f7f7f7;
+  margin: 0px -30px;
+  padding: 60px 0px 40px 0px;
+}
+
+h2.object-header1 {
+  font-size: 22px;
+  font-weight: 600;
+  color: #000;
+  margin-bottom: 25px;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+.it-prod1 {
+  text-align: center;
+  margin-top: 30px;
+  padding: 20px 10px;
+  height: 320px;
+  border-right: 1px solid #e3dcdc;
+}
+
+.it-prod1 h6 > i.fa {
+  font-size: 40px;
+  color: #0046be;
+  margin-bottom: 20px;
+  display: inline-block;
+  border-radius: 60px;
+  box-shadow: 0 0 2px #0046be;
+  padding: 0.5em 0.6em;
+}
+
+.it-prod1 h4 {
+  font-weight: 500;
+  font-size: 18px;
+  margin-bottom: 15px;
+  color: #0046be;
+}
+
+.it-prod1 p {
+  font-size: 14px;
+  line-height: 25px;
+  letter-spacing: 0.5px;
+  color: #000;
+  font-weight: 400;
+}
+
+.subTitle {
+  background-color: #0046be;
+  color: #ffffff;
+  padding: 2px 20px;
+  font-weight: 600;
+  font-size: 13px;
+  text-transform: capitalize;
+  display: inline-block;
+}
+
+.subTitleColumn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.twelve {
+  font-size: 26px;
+  font-weight: 600;
+  text-align: center;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  width: 100%;
+  white-space: nowrap;
+  padding-bottom: 0;
+  margin-top: 15px;
+}
+
+@media only screen and (min-width: 481px) and (max-width: 768) {
+  .choose-us {
+    padding: 60px 100px;
+  }
+}
+
+/*@media only screen and (max-width: 480px) {
+                 .choose-us{padding: 0px 30px;}
+         }*/

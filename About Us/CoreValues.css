@@ -1,0 +1,64 @@
+.CoreValues {
+  align-items: center;
+  font-size: 25px;
+  font-weight: 600;
+  text-decoration: underline;
+  text-decoration-color: #003da6;
+  text-decoration-thickness: 2.3px;
+  text-underline-offset: 8px;
+}
+
+.VisionText {
+  font-size: 16px;
+}
+
+.twelve {
+  font-size: 26px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  width: 100%;
+  white-space: nowrap;
+  margin-top: 15px;
+  position: relative;
+}
+
+.subHeading {
+  color: white;
+  background-color: #003da6;
+  display: inline-block;
+  padding: 6px 12px;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+@media only screen and (max-width: 600px) {
+  .subHeading {
+    font-size: 13px;
+  }
+
+  .mainContainer {
+    padding-left: 3%;
+    padding-right: 3%;
+  }
+
+  .CoreValues {
+    font-size: 24px;
+  }
+
+  .OurMission {
+    margin-top: 30px;
+  }
+
+  .OurPromise {
+    margin-top: 30px;
+  }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 991px) {
+  .Ourimage {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
